@@ -1,74 +1,86 @@
-export const currencyArr:currency[]=[
+export const currencyByRupee: currency[] = [
     {
-        name:'DOLLAR',
-        value:0.01,
-        flag:'🇺🇸' ,
-        symbol:'$'
+      name: 'DOLLAR',
+      value: 0.0035907,
+      flag: '🇺🇸',
+      symbol: '$',
     },
     {
-        name:'AUS-DOLLAR',
-        value:0.01,
-        flag:'🇦🇺' ,
-        symbol:'$'
+      name: 'EURO',
+      value: 0.0031177,
+      flag: '🇪🇺',
+      symbol: '€',
     },
     {
-        name:'POUNDS',
-        value:0.01,
-        flag:'🇬🇧' ,
-        symbol:'$'
+      name: 'POUND',
+      value: 0.0026905,
+      flag: '🇬🇧',
+      symbol: '£',
     },
     {
-        name:'RIYAL',
-        value:0.01,
-        flag:'🇸🇦' ,
-        symbol:'$'
+      name: 'RUBEL',
+      value: 0.2620287,
+      flag: '🇷🇺',
+      symbol: '₽',
     },
     {
-        name:'EURO',
-        value:0.01,
-        flag:'🇦🇺' ,
-        symbol:'$'
+      name: 'AUS DOLLAR',
+      value: 0.0050935,
+      flag: '🇦🇺',
+      symbol: 'A$',
+    },
+    {
+      name: 'CAN DOLLAR',
+      value: 0.0050102,
+      flag: '🇨🇦',
+      symbol: 'C$',
+    },
+    {
+      name: 'YEN',
+      value: 0.5751710,
+      flag: '🇯🇵',
+      symbol: '¥',
+    },
+    {
+      name: 'DINAR',
+      value: 0.0011096,
+      flag: '🇰🇼',
+      symbol: 'KD',
+    },
+    {
+      name: 'YUAN',
+      value: 0.0243490,
+      flag: '🇨🇳',
+      symbol: '¥',
     },
     {
       name: 'BITCOIN',
-      value: 0.000000543544886,
+      value: 0.0000001101,
       flag: '🎰',
       symbol: '₿',
     },
     {
-        name:'TAKKA',
-        value:0.01,
-        flag:'🇧🇩' ,
-        symbol:'$'
+      name: 'INR',
+      value: 0.340023001,
+      flag: '🇮🇳',
+      symbol: '₹',
     },
     {
-        name:'IR-RIYAL',
-        value:0.01,
-        flag:'🇮🇷' ,
-        symbol:'$'
+      name: 'IR RIYAL',
+      value: 4937.340012,
+      flag: '🇮🇷',
+      symbol: '﷼',
     },
     {
-        name:'INR',
-        value:0.01,
-        flag:'🇮🇳' ,
-        symbol:'$'
+      name: 'SAUDI RIYAL',
+      value: 0.013000079,
+      flag: '🇸🇦',
+      symbol: '﷼',
     },
     {
-        name:'YUAN',
-        value:0.01,
-        flag:'🇨🇳' ,
-        symbol:'$'
+      name: 'TAKKA',
+      value: 0.444341001,
+      flag: '🇧🇩',
+      symbol: '৳',
     },
-    {
-        name:'YEN',
-        value:0.01,
-        flag:'🇯🇵' ,
-        symbol:'$'
-    },
-    {
-        name:'RUBLE',
-        value:0.01,
-        flag:'🇷🇺' ,
-        symbol:'$'
-    },
-]
+  ];

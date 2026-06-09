@@ -39,7 +39,7 @@ export default function App():JSX.Element {
 
   if(!isNaN(inputAmount)){
     const convertedValue=inputAmount*targetValue.value
-    const finalResult=`${targetValue.symbol}${convertedValue.toFixed(2)}`
+    const finalResult=`${targetValue.symbol}${convertedValue.toFixed(2)}🤑`
     setResultValue(finalResult)
     setTargetCurrency(targetValue.name)
   }
@@ -61,7 +61,7 @@ export default function App():JSX.Element {
                 Rs
               </Text>
               <TextInput 
-              
+              style={styles.inputFeild}
                 placeholder='Enter amount in PKR'
                 maxLength={10}
                 value={inputValue}
@@ -80,7 +80,8 @@ export default function App():JSX.Element {
         <View style={styles.bottomContainer}>
             <FlatList 
             data={currencyByRupee}
-            numColumns={3}
+            key={3}//Without key, React tries to reuse the existing FlatList with a different column count, which causes a layout crash.
+            numColumns={4}
             keyExtractor={item=>item.name}
             renderItem={({item})=>(
               <Pressable style={[styles.button, TargetCurrency===item.name && styles.selected]} onPress={()=>BtnPressed(item)}>
@@ -97,7 +98,7 @@ export default function App():JSX.Element {
 const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,
-    backgroundColor: '#515151',
+    backgroundColor: '#cce4ff',
   },
   TopContainer: {
     flex: 1,
@@ -114,20 +115,24 @@ const styles = StyleSheet.create({
   },
   result:{
     fontSize: 32,
-    color: '#000000',
+    color: '#207de9',
     fontWeight: '800'
   },
   bottomContainer:{
-    flex:3
+    flex:2,
+    alignItems:'center',
+    justifyContent:'space-evenly'
   },
   textContainer:{
     flexDirection: 'row',
     alignItems: 'center',
   },
   button:{
-    margin: 12,
-    height: 60,
-    borderRadius: 12,
+    margin:12,
+    width:60,
+    justifyContent:'center',
+    alignItems:'center',
+    borderRadius: 10,
     backgroundColor: '#fff',
     elevation: 2,
     shadowColor: '#333',

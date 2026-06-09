@@ -22,16 +22,19 @@ const CurrencyBtn=(props:currencyProps):JSX.Element=> {
 
 const styles = StyleSheet.create({
     btnContainer:{
-        alignItems:'center'
+        alignItems:'center',
+        
     },
     flag:{
         fontSize: 28,
         color: "#FFFFFF",
-        marginBottom: 4
+        marginBottom: 4,
+        alignItems:'center'
     },
     country:{
         fontSize: 14,
         color: "#2d3436",
+        textAlign:'center'
     },
     symbol:{
         fontSize:12,
